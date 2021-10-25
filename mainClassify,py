@@ -12,7 +12,8 @@ NUM_EPOCHS = 25
 BS = 64
 
 (trainX, trainY), (testX, testY) = fashion_mnist.load_data()
-
+print(f'len trainX - {len(trainX)} len testX - {len(testX)}')
+input()
 trainX = trainX.reshape(trainX.shape[0], 784) / 255
 testX = testX.reshape(testX.shape[0], 784) / 255
 
